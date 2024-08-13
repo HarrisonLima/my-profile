@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  font-family: $font-primary;
+  margin: 0;
+  padding: 0;
+}
+
+html ::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    to bottom,
+    $color-primary-pink,
+    $color-primary-purple
+  );
+  border-radius: 3.5rem;
+}
+
+html ::-webkit-scrollbar-track {
+  background: $color-gray-900;
+}
+
+::selection {
+  background-color: $color-gray-200;
+  color: $color-black;
+}
+
+:root {
+  background-image: linear-gradient(
+    to right,
+    $color-primary-pink,
+    $color-primary-purple
+  );
+  color: $color-white;
+  font-size: 100%;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
