@@ -11,11 +11,7 @@ html ::-webkit-scrollbar {
 }
 
 html ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(
-    to bottom,
-    $color-primary-pink,
-    $color-primary-purple
-  );
+  background-color: $color-gray-300;
   border-radius: 3.5rem;
 }
 
@@ -26,14 +22,16 @@ html ::-webkit-scrollbar-track {
 ::selection {
   background-color: $color-gray-200;
   color: $color-black;
+  font-weight: 700;
 }
 
 :root {
   background-image: linear-gradient(
     to right,
-    $color-primary-pink,
-    $color-primary-purple
+    $color-theme-first-primary,
+    $color-theme-first-secondary
   );
+  animation: toggle-theme 60s infinite;
   color: $color-white;
   font-size: 100%;
   font-synthesis: none;

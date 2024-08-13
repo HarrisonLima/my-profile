@@ -1,7 +1,11 @@
+import Profile from "../../Profile";
+
 const ModalHome = () => {
   return (
-    <div>index</div>
-  )
-}
+    <section className="section__profile">
+      <Profile />
+    </section>
+  );
+};
 
-export default ModalHome
+export default ModalHome;
