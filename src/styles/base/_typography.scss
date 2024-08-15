@@ -9,5 +9,66 @@
   &--secondary {
     font-size: 1.25rem;
     font-weight: 500;
+    position: relative;
+    width: fit-content;
+
+    &::after {
+      background-color: $color-white;
+      bottom: 0;
+      content: "";
+      height: 0.125rem;
+      left: 50%;
+      position: absolute;
+      right: 50%;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &:hover::after {
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &--tertiary {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 25%;
+      height: 1px;
+      background-color: $color-white;
+      vertical-align: middle;
+      margin: 0 2rem;
+    }
+
+    &::before {
+      margin-right: 4rem;
+    }
+
+    &::after {
+      margin-left: 4rem;
+    }
+  }
+}
+
+.link {
+  border-radius: 0.25rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+
+  &:hover {
+    background-color: $color-gray-200;
+    color: $color-gray-800;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
   }
 }

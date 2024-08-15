@@ -1,7 +1,13 @@
 .section {
-    &__profile {
-        display: flex;
-        justify-content: center;
-        padding-top: 8rem;
-    }
+  &__profile {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  &__skills {
+    display: flex;
+    flex-direction: column;
+  }
 }

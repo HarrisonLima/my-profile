@@ -1,0 +1,75 @@
+.project {
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 1rem rgba($color-white, 0.32);
+  display: inline-block;
+  padding: 2rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0.25rem 1rem rgba($color-white, 0.64);
+    transform: scale(1.05);
+  }
+
+  &-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+    @extend %section-breath;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    &__header {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    &__cover {
+      border-radius: 0.5rem;
+      box-shadow: 0 0.25rem 1rem rgba($color-white, 0.12);
+      object-fit: cover;
+      height: 12rem;
+      transition: all 0.3s ease-in-out;
+      width: 20rem;
+
+      &:hover {
+        box-shadow: 0 0.25rem 1rem rgba($color-white, 0.24);
+      }
+    }
+
+    &__title {
+      margin: 0 auto;
+    }
+
+    &__link {
+      display: flex;
+      align-items: end;
+    }
+
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+
+      & > li {
+        border-radius: 0.125rem;
+        color: $color-gray-200;
+        font-weight: 400;
+        transition: all 0.2s ease-in-out;
+        padding: 0.125rem 0;
+
+        &:hover {
+          background-color: rgba($color-gray-400, 0.24);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "cardapio-digital-gopizza",
+    "nome": "Cardápio digital",
+    "descricao": "Desenvolvido uma página estática para um cardápio digital, destacando-se por sua estética simples e moderna. O layout é cuidadosamente projetado para apresentar as opções do menu de maneira clara e organizada, proporcionando uma experiência de navegação fluida e intuitiva. Com cores e tipografias minimalistas, o design garante foco total no conteúdo, sem elementos que desviem a atenção. Responsiva e adaptável a diversos dispositivos, a página oferece uma solução elegante e eficiente para restaurantes que desejam modernizar a apresentação de seus menus.",
+    "tecnologias": ["React", "Typescript", "Styled-components", "Figma"],
+    "prototipo": "https://www.behance.net/gallery/197129867/Cardapio",
+    "aplicacao": "https://cardapio-gopizza.vercel.app/",
+    "repositorio": "https://github.com/HarrisonLima/cardapio-gopizza"
+  },
+  {
+    "id": "calculadora",
+    "nome": "Calculadora",
+    "descricao": "Desenvolvida uma calculadora com foco em estilização moderna e operações básicas, este projeto oferece uma interface limpa e intuitiva que prioriza a usabilidade. Com um design minimalista, cada elemento da calculadora foi cuidadosamente estilizado para proporcionar uma experiência visual agradável, enquanto mantém a funcionalidade clara e acessível. As operações básicas, como adição, subtração, multiplicação e divisão, são executadas de forma precisa e eficiente, garantindo que a ferramenta seja prática e fácil de usar. Ideal para usuários que procuram uma solução simples e esteticamente agradável para cálculos diários, esta calculadora combina forma e função em um único pacote responsivo, adaptando-se perfeitamente a diversos dispositivos.",
+    "tecnologias": ["HTML", "CSS", "SASS", "JavaScript", "Typescript"],
+    "prototipo": "",
+    "aplicacao": "https://calculator-ts-sass.vercel.app/",
+    "repositorio": "https://github.com/HarrisonLima/calculator-ts-sass"
+  },
+  {
+    "id": "natours",
+    "nome": "Natours",
+    "descricao": "Desenvolvido um website para uma empresa especializada em viagens em grupo para explorar a natureza, onde cores vivas e design dinâmico capturam a essência das aventuras ao ar livre. A página é cuidadosamente projetada para refletir a beleza natural através de uma paleta de cores inspirada na terra, céu e vegetação, criando uma conexão imediata com o ambiente que os viajantes irão explorar. As vantagens e características das viagens são apresentadas de forma clara e envolvente, com seções interativas que guiam o visitante através dos pacotes oferecidos, desde trilhas em montanhas até expedições em florestas tropicais. O layout responsivo e intuitivo assegura que todas as informações estejam facilmente acessíveis, independentemente do dispositivo, oferecendo uma experiência de navegação que inspira confiança e desperta o desejo de se aventurar na natureza. Ideal para quem busca uma imersão completa nas paisagens mais deslumbrantes, este website não só informa como também cativa os exploradores em potencial.",
+    "tecnologias": ["HTML", "CSS", "SASS"],
+    "prototipo": "",
+    "aplicacao": "https://natours-html-sass.vercel.app/",
+    "repositorio": "https://github.com/HarrisonLima/natours-html-sass"
+  },
+  {
+    "id": "notas-ritmo",
+    "nome": "Notas e Ritmo",
+    "descricao": "Desenvolvida uma landing page para uma escola de música, onde o layout minimalista e elegante é complementado por cores vibrantes e animações interativas. A página foi projetada para oferecer uma visão abrangente da escola, apresentando informações detalhadas sobre sua filosofia e métodos de ensino. Além disso, inclui vídeos envolventes que destacam as aulas e performances, proporcionando uma imersão completa para os visitantes. Há também uma seção dedicada aos instrutores, com perfis que descrevem suas qualificações e experiência, garantindo transparência e confiança. Cada instrumento ensinado na escola é brevemente descrito, dando aos futuros alunos uma visão clara das possibilidades de aprendizado. Com design responsivo, a landing page garante uma experiência rica e adaptada a qualquer dispositivo, tornando-se uma ferramenta poderosa para atrair e inspirar novos músicos.",
+    "tecnologias": ["React", "Typescript", "SASS", "Figma"],
+    "prototipo": "https://www.behance.net/gallery/205558357/Notas-e-ritmo",
+    "aplicacao": "https://notas-ritmo.vercel.app/",
+    "repositorio": ""
+  },
+  {
+    "id": "taskhub",
+    "nome": "Taskhub",
+    "descricao": "Desenvolvido um gerenciador de tarefas com um design simples, responsivo e minimalista. A aplicação foi projetada para oferecer uma experiência de gerenciamento de tarefas eficiente e descomplicada. Com uma interface clara e direta, os usuários podem facilmente adicionar, visualizar e organizar suas tarefas diárias. A simplicidade do design permite uma navegação intuitiva, enquanto a responsividade garante que a aplicação funcione perfeitamente em diferentes dispositivos e tamanhos de tela. Ideal para quem busca uma ferramenta prática e elegante para manter suas atividades em ordem, este gerenciador de tarefas combina eficiência e estética, facilitando a produtividade no dia a dia.",
+    "tecnologias": ["HTML", "CSS", "JavaScript", "Figma"],
+    "prototipo": "https://www.behance.net/gallery/205187325/TaskHub-Gerenciador-de-tarefas",
+    "aplicacao": "https://taskhub-nine.vercel.app/",
+    "repositorio": "https://github.com/HarrisonLima/taskhub-html-css-js"
+  }
+]
