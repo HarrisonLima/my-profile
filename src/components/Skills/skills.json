@@ -1,0 +1,58 @@
+[
+  {
+    "id": "js",
+    "nome": "JavaScript"
+  },
+  {
+    "id": "html",
+    "nome": "HTML"
+  },
+  {
+    "id": "css",
+    "nome": "CSS"
+  },
+  {
+    "id": "sass",
+    "nome": "SASS"
+  },
+  {
+    "id": "figma",
+    "nome": "Figma"
+  },
+  {
+    "id": "git",
+    "nome": "Git"
+  },
+  {
+    "id": "github",
+    "nome": "Github"
+  },
+  {
+    "id": "gitlab",
+    "nome": "Gitlab"
+  },
+  {
+    "id": "postman",
+    "nome": "Postman"
+  },
+  {
+    "id": "postgresql",
+    "nome": "PostegreSQL"
+  },
+  {
+    "id": "react",
+    "nome": "React"
+  },
+  {
+    "id": "typescript",
+    "nome": "Typescript"
+  },
+  {
+    "id": "node",
+    "nome": "Node"
+  },
+  {
+    "id": "vite",
+    "nome": "Vite"
+  }
+]

@@ -7,14 +7,16 @@
     padding: 0 0;
     position: relative;
     transition: all 0.3s ease-in-out;
+    width: fit-content;
 
     &--double-bars {
       &:hover {
+        background-color: rgba($color-secondary, 0.12);
         padding: 0 1.5rem;
         transition: all 0.3s ease-in-out;
 
         &::before {
-          background-color: $color-gray-200;
+          background-color: $color-secondary;
           border-radius: 0.25rem;
           bottom: 0;
           content: "";
@@ -27,7 +29,7 @@
         }
 
         &::after {
-          background-color: $color-gray-200;
+          background-color: $color-secondary;
           border-radius: 0.25rem;
           bottom: 0;
           content: "";
@@ -41,7 +43,7 @@
       }
 
       &::before {
-        background-color: $color-gray-200;
+        background-color: $color-secondary;
         border-radius: 0.25rem;
         bottom: 0;
         content: "";
@@ -54,7 +56,7 @@
       }
 
       &::after {
-        background-color: $color-gray-200;
+        background-color: $color-secondary;
         border-radius: 0.25rem;
         bottom: 0;
         content: "";
@@ -69,11 +71,13 @@
 
     &--simple-bar {
       &:hover {
-        padding-left: 1.5rem;
+        background-color: rgba($color-secondary, 0.12);
+        border-radius: 0.25rem;
+        padding: 0 1.5rem;
         transition: all 0.3s ease-in-out;
 
         &::before {
-          background-color: $color-gray-200;
+          background-color: $color-secondary;
           border-radius: 0.25rem;
           bottom: 0;
           content: "";
@@ -88,7 +92,7 @@
     }
 
     &::before {
-      background-color: $color-gray-200;
+      background-color: $color-secondary;
       border-radius: 0.25rem;
       bottom: 0;
       content: "";
@@ -106,47 +110,27 @@
     font-weight: 500;
     position: relative;
     width: fit-content;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba($color-secondary, 0.32);
+    }
 
     &::after {
-      background-color: $color-white;
+      background-color: $color-secondary;
       bottom: 0;
       content: "";
       height: 0.125rem;
       left: 50%;
       position: absolute;
       right: 50%;
+      top: 1.5rem;
       transition: all 0.5s ease-in-out;
     }
 
     &:hover::after {
       left: 0;
       right: 0;
-    }
-  }
-
-  &--tertiary {
-    font-size: 2rem;
-    font-weight: 700;
-    position: relative;
-    text-align: center;
-
-    &::before,
-    &::after {
-      content: "";
-      display: inline-block;
-      width: 25%;
-      height: 1px;
-      background-color: $color-white;
-      vertical-align: middle;
-      margin: 0 2rem;
-    }
-
-    &::before {
-      margin-right: 4rem;
-    }
-
-    &::after {
-      margin-left: 4rem;
     }
   }
 }
@@ -160,8 +144,9 @@
   width: fit-content;
 
   &:hover {
-    background-color: $color-gray-200;
-    color: $color-gray-800;
+    background-color: $color-secondary;
+    box-shadow: 0 0.25rem 1rem rgba($color-secondary, 0.32);
+    color: $color-gray-200;
     cursor: pointer;
     text-decoration: none;
     padding: 0.25rem 0.5rem;
@@ -169,11 +154,11 @@
 }
 
 .text {
-  color: $color-gray-300;
+  color: $color-gray-400;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-color: rgba($color-gray-800, 0.24);
-    color: $color-white;
+    background-color: rgba($color-gray-900, 0.16);
+    color: $color-gray-200;
   }
 }

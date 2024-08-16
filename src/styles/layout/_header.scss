@@ -1,0 +1,10 @@
+.header {
+  position: relative;
+
+  &__button {
+    position: fixed;
+    top: 2.5%;
+    left: 4rem;
+    z-index: 1;
+  }
+}

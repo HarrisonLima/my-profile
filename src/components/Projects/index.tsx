@@ -20,8 +20,8 @@ const Projects = () => {
   };
   const [project, setProject] = useState<IProject>(initialProject);
 
-  const cover = (project: string) => {
-    switch (project) {
+  const cover = (id: string) => {
+    switch (id) {
       case "calculadora":
         return calculadora;
       case "cardapio-digital-gopizza":
@@ -69,7 +69,7 @@ const Projects = () => {
                 </ul>
                 <span className="project__content__link">
                   <p className="link" onClick={() => setProject(project)}>
-                    Learn more
+                    Saiba mais
                   </p>
                 </span>
               </div>

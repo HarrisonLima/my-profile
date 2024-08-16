@@ -4,7 +4,7 @@ import css from "./assets/css-svgrepo-com.svg";
 import sass from "./assets/sass-svgrepo-com.svg";
 import figma from "./assets/figma-svgrepo-com.svg";
 import git from "./assets/git-svgrepo-com.svg";
-import github from "./assets/github-142-svgrepo-com.svg";
+import github from "./assets/github-svgrepo-com.svg";
 import gitlab from "./assets/gitlab-svgrepo-com.svg";
 import postman from "./assets/postman-icon-svgrepo-com.svg";
 import postgresql from "./assets/postgresql-svgrepo-com.svg";
@@ -12,30 +12,64 @@ import react from "./assets/react-svgrepo-com.svg";
 import typescript from "./assets/typescript-icon-svgrepo-com.svg";
 import node from "./assets/node-js-svgrepo-com.svg";
 import vite from "./assets/vite-svgrepo-com.svg";
+import modules from "./skills.json";
 
+interface ISkill {
+  id: string;
+  nome: string;
+}
 const Skills = () => {
+  const cover = (id: string) => {
+    switch (id) {
+      case "js":
+        return js;
+      case "html":
+        return html;
+      case "css":
+        return css;
+      case "sass":
+        return sass;
+      case "figma":
+        return figma;
+      case "git":
+        return git;
+      case "github":
+        return github;
+      case "gitlab":
+        return gitlab;
+      case "postman":
+        return postman;
+      case "postgresql":
+        return postgresql;
+      case "react":
+        return react;
+      case "typescript":
+        return typescript;
+      case "node":
+        return node;
+      case "vite":
+        return vite;
+      default:
+        return undefined;
+    }
+  };
+
   return (
-    <div className="skills">
-      <div className="skills__brand-box">
-        <img src={js} alt="JS's logo" className="skills__brand" />
-        <img src={html} alt="HTML's logo" className="skills__brand" />
-        <img src={css} alt="CSS's logo" className="skills__brand" />
-        <img src={sass} alt="SASS's logo" className="skills__brand" />
-        <img src={figma} alt="Figma's logo" className="skills__brand" />
-      </div>
-      <div className="skills__brand-box">
-        <img src={git} alt="Git's logo" className="skills__brand" />
-        <img src={github} alt="Github's logo" className="skills__brand" />
-        <img src={gitlab} alt="Gitlab's logo" className="skills__brand" />
-        <img src={postman} alt="Postman's logo" className="skills__brand" />
-        <img src={postgresql} alt="PostgreSQL's logo" className="skills__brand" />
-      </div>
-      <div className="skills__brand-box">
-        <img src={react} alt="React's logo" className="skills__brand" />
-        <img src={typescript} alt="Typescript's logo" className="skills__brand" />
-        <img src={vite} alt="Vite's logo" className="skills__brand" />
-        <img src={node} alt="Node.js's logo" className="skills__brand" />
-      </div>
+    <div className="skill-box">
+      {modules.map((brand: ISkill, index) => {
+        return (
+          <div className="skill__card" key={index}>
+            <img
+              src={cover(brand.id)}
+              alt={`${brand.nome} logo`}
+              className="skill__card__picture"
+            />
+            <figcaption className="skill__card__caption">
+              {brand.nome}
+            </figcaption>
+          </div>
+        );
+      })}
     </div>
   );
 };

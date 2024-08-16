@@ -1,19 +1,20 @@
 .project {
+  background-color: $color-primary;
+  border: 0.125rem solid rgba($color-secondary, 0.8);
   border-radius: 0.75rem;
-  box-shadow: 0 0.25rem 1rem rgba($color-white, 0.32);
+  box-shadow: 0 0.25rem 1rem rgba($color-secondary, 0.64);
   display: inline-block;
   padding: 2rem 1.5rem;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    box-shadow: 0 0.25rem 1rem rgba($color-white, 0.64);
+    box-shadow: 0 0.25rem 2rem rgba($color-tertiary, 0.64);
     transform: scale(1.05);
   }
 
   &-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 6rem;
     @extend %section-breath;
   }
@@ -32,14 +33,14 @@
 
     &__cover {
       border-radius: 0.5rem;
-      box-shadow: 0 0.25rem 1rem rgba($color-white, 0.12);
+      box-shadow: 0 0.25rem 1rem rgba($color-secondary, 0.24);
       object-fit: cover;
       height: 12rem;
       transition: all 0.3s ease-in-out;
       width: 20rem;
 
       &:hover {
-        box-shadow: 0 0.25rem 1rem rgba($color-white, 0.24);
+        box-shadow: 0 0.25rem 1rem rgba($color-secondary, 0.48);
       }
     }
 

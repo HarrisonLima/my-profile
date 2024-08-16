@@ -19,15 +19,16 @@ const Profile = () => {
             className="profile__content__header__picture"
           />
           <div className="profile__content__header__title-box">
-            <h1 className="heading--primary heading--primary--double-bars">Harrison Lima</h1>
+            <h1 className="heading--primary heading--primary--double-bars">
+              Harrison Lima
+            </h1>
             <h2 className="heading--secondary">Software Developer</h2>
           </div>
         </header>
         <p className="text profile__content__bio">
-          I hold a degree in Systems Analysis and Development from UMFG and am
-          21 years old. I have experience with Figma, Node.js, JavaScript,
-          React, and TypeScript, focusing on the continuous improvement of these
-          skills.
+          Sou Tecnólogo em Análise e Desenvolvimento de Sistemas pela UMFG, com
+          21 anos. Tenho experiência com Figma, Node.js, JavaScript, React e
+          TypeScript, focando no aprimoramento contínuo dessas habilidades.
         </p>
         <footer className="profile__content__footer">
           <div className="profile__content__social-medias">
@@ -50,7 +51,6 @@ const Profile = () => {
             <FontAwesomeIcon
               icon={faGithub}
               className="profile__content__social-medias__icon"
-              onClick={() => console.log("no")}
             />
           </div>
         </footer>
