@@ -37,7 +37,7 @@ const Popup = ({
             {data.aplicacao !== "" && (
               <div className="popup__content__container">
                 <h2 className="heading--secondary">Aplicação</h2>
-                <a href={data.aplicacao} className="link-url" target="_blank">
+                <a href={data.aplicacao} className="link--url" target="_blank">
                   {data.aplicacao}
                 </a>
               </div>
@@ -45,13 +45,13 @@ const Popup = ({
             {data.prototipo !== "" && (
               <div className="popup__content__container">
                 <h2 className="heading--secondary">Design</h2>
-                <a href={data.prototipo} className="link-url" target="_blank">{data.prototipo}</a>
+                <a href={data.prototipo} className="link--url" target="_blank">{data.prototipo}</a>
               </div>
             )}
             {data.repositorio !== "" && (
               <div className="popup__content__container">
                 <h2 className="heading--secondary">Repositório</h2>
-                <a href={data.repositorio} className="link-url" target="_blank">
+                <a href={data.repositorio} className="link--url" target="_blank">
                   {data.repositorio}
                 </a>
               </div>

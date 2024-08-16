@@ -1,18 +1,21 @@
 .button {
+  align-items: center;
   appearance: none;
-  background-color: $color-primary;
-  border: 0.125rem solid $color-secondary ;
+  background-color: $color-secondary;
+  border: 0.125rem solid $color-tertiary;
   border-radius: 0.5rem;
-  box-shadow: 0 0.25rem 1rem rgba($color-secondary, 0.64);
+  box-shadow: 0 0.25rem 1rem rgba($color-primary, 0.48);
   color: $color-gray-200;
   cursor: pointer;
+  display: flex;
+  gap: 1rem;
   font-size: 1.125rem;
   font-weight: 600;
   padding: 1rem 2rem;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    box-shadow: 0 0.25rem 2rem .25rem rgba($color-tertiary, 0.8);
-    background-color: $color-secondary;
+    box-shadow: 0 0.25rem 2rem 0.25rem rgba($color-tertiary, 0.8);
+    background-color: $color-primary;
   }
 }

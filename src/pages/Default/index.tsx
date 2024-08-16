@@ -1,17 +1,15 @@
 import { Outlet } from "react-router-dom";
-import cv from "../../assets/cv-harrison-fabiano-de-lima.pdf";
+import Header from "./../../components/Header/index";
+import Footer from "../../components/Footer";
 
 const Default = () => {
   return (
     <>
-      <header className="header">
-        <a href={cv} className="header__button" target="_blank">
-          <button className="button">Currículo</button>
-        </a>
-      </header>
+      <Header />
       <main className="main">
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 };

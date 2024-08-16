@@ -136,7 +136,7 @@
 }
 
 .link {
-  &-url {
+  &--url {
     color: $color-gray-400;
     transition: all 0.3s ease-in-out;
 
@@ -145,7 +145,7 @@
     }
   }
 
-  &-button {
+  &--button {
     border-radius: 0.25rem;
     font-weight: 600;
     text-decoration: underline;

@@ -2,9 +2,10 @@
   position: relative;
 
   &__button {
+    right: 2rem;
     position: fixed;
-    top: 2.5%;
-    left: 4rem;
+    text-decoration: none;
+    top: 2rem;
     z-index: 1;
   }
 }
