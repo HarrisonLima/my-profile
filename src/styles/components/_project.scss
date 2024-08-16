@@ -50,26 +50,7 @@
     &__link {
       display: flex;
       align-items: end;
-    }
-
-    & > ul {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-      padding-left: 1rem;
-      margin-bottom: 1.5rem;
-
-      & > li {
-        border-radius: 0.125rem;
-        color: $color-gray-200;
-        font-weight: 400;
-        transition: all 0.2s ease-in-out;
-        padding: 0.125rem 0;
-
-        &:hover {
-          background-color: rgba($color-gray-400, 0.24);
-        }
-      }
+      margin-top: 1.5rem;
     }
   }
 }

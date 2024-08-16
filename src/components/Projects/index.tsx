@@ -4,8 +4,22 @@ import gopizza from "./assets/cover-cardapio-digital-gopizza.svg";
 import natours from "./assets/cover-natours.svg";
 import notasRitmo from "./assets/cover-notas-ritmo.svg";
 import taskhub from "./assets/cover-taskhub.svg";
+import Popup from "./../Popup/index";
+import IProject from "../../interfaces/IProject";
+import { useState } from "react";
 
 const Projects = () => {
+  const initialProject = {
+    id: "",
+    nome: "",
+    descricao: "",
+    tecnologias: [""],
+    prototipo: "",
+    aplicacao: "",
+    repositorio: "",
+  };
+  const [project, setProject] = useState<IProject>(initialProject);
+
   const cover = (project: string) => {
     switch (project) {
       case "calculadora":
@@ -23,20 +37,14 @@ const Projects = () => {
     }
   };
 
+  const closePopup = () => {
+    setProject(initialProject);
+  };
+
   return (
-    <div className="project-box">
-      {modules.map(
-        (
-          project: {
-            id: string;
-            nome: string;
-            descricao: string;
-            tecnologias: string[];
-            prototipo: string;
-            aplicacao: string;
-          },
-          index
-        ) => {
+    <>
+      <div className="project-box">
+        {modules.map((project: IProject, index) => {
           return (
             <div key={index} className="project">
               <div className="project__content">
@@ -50,20 +58,27 @@ const Projects = () => {
                     {project.nome}
                   </h2>
                 </header>
-                <ul>
+                <ul className="list">
                   {project.tecnologias.map((tecnologia: string, index) => {
-                    return <li key={index}>{tecnologia}</li>;
+                    return (
+                      <li key={index} className="list__item">
+                        {tecnologia}
+                      </li>
+                    );
                   })}
                 </ul>
                 <span className="project__content__link">
-                  <p className="link">Learn more</p>
+                  <p className="link" onClick={() => setProject(project)}>
+                    Learn more
+                  </p>
                 </span>
               </div>
             </div>
           );
-        }
-      )}
-    </div>
+        })}
+      </div>
+      <Popup data={project} closePopup={closePopup} />
+    </>
   );
 };
 

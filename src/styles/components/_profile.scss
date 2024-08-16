@@ -9,6 +9,7 @@
 
   &:hover {
     box-shadow: 0 0.25rem 1rem rgba($color-white, 0.48);
+    transform: scale(1.05);
   }
 
   &__content {
@@ -52,14 +53,9 @@
     }
 
     &__bio {
-      color: $color-gray-300;
       max-width: 24rem;
       text-align: justify;
-      transition: all 0.3s ease-in-out;
 
-      &:hover {
-        color: $color-white;
-      }
     }
 
     &__social-medias {
@@ -76,6 +72,7 @@
         cursor: pointer;
         height: 2.5rem;
         padding: 0.5rem;
+        position: relative;
         transition: all 0.3s ease-in-out;
         width: 2.5rem;
 

@@ -19,11 +19,11 @@ const Profile = () => {
             className="profile__content__header__picture"
           />
           <div className="profile__content__header__title-box">
-            <h1 className="heading--primary">Harrison Lima</h1>
+            <h1 className="heading--primary heading--primary--double-bars">Harrison Lima</h1>
             <h2 className="heading--secondary">Software Developer</h2>
           </div>
         </header>
-        <p className="profile__content__bio">
+        <p className="text profile__content__bio">
           I hold a degree in Systems Analysis and Development from UMFG and am
           21 years old. I have experience with Figma, Node.js, JavaScript,
           React, and TypeScript, focusing on the continuous improvement of these
