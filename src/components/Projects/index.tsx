@@ -68,7 +68,7 @@ const Projects = () => {
                   })}
                 </ul>
                 <span className="project__content__link">
-                  <p className="link" onClick={() => setProject(project)}>
+                  <p className="link-button" onClick={() => setProject(project)}>
                     Saiba mais
                   </p>
                 </span>
