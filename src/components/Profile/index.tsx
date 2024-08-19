@@ -1,10 +1,10 @@
 import {
   faBehanceSquare,
-  faDiscord,
   faFigma,
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import profile from "../../assets/profile.jpg";
 
@@ -31,26 +31,39 @@ const Profile = () => {
           TypeScript, focando no aprimoramento contínuo dessas habilidades.
         </p>
         <div className="profile__content__social-medias">
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="profile__content__social-medias__icon"
-          />
-          <FontAwesomeIcon
-            icon={faBehanceSquare}
-            className="profile__content__social-medias__icon"
-          />
-          <FontAwesomeIcon
-            icon={faFigma}
-            className="profile__content__social-medias__icon"
-          />
-          <FontAwesomeIcon
-            icon={faDiscord}
-            className="profile__content__social-medias__icon"
-          />
-          <FontAwesomeIcon
-            icon={faGithub}
-            className="profile__content__social-medias__icon"
-          />
+          <a
+            href="https://www.linkedin.com/in/harrison-fabiano-de-lima/"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="profile__content__social-medias__icon"
+            />
+          </a>
+          <a href="https://www.behance.net/harrisonfabianolima" target="_blank">
+            <FontAwesomeIcon
+              icon={faBehanceSquare}
+              className="profile__content__social-medias__icon"
+            />
+          </a>
+          <a href="https://www.figma.com/@harrisonlima" target="_blank">
+            <FontAwesomeIcon
+              icon={faFigma}
+              className="profile__content__social-medias__icon"
+            />
+          </a>
+          <a href="mailto:harrisonlima92@gmail.com">
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="profile__content__social-medias__icon"
+            />
+          </a>
+          <a href="https://github.com/HarrisonLima" target="_blank">
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="profile__content__social-medias__icon"
+            />
+          </a>
         </div>
       </div>
     </div>
