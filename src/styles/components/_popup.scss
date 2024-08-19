@@ -4,7 +4,20 @@
   box-shadow: 0 0.25rem 1rem rgba($color-secondary, 0.64);
   padding: 4rem;
   transition: all 0.3s ease-in-out;
-  width: fit-content;
+  width: 80%;
+
+  @include respond(widescreen) {
+    padding: 4rem 6rem;
+  }
+
+  @include respond(tab-land) {
+    padding: 2rem;
+    width: 90%;
+  }
+
+  @include respond(phone) {
+    padding: 1rem;
+  }
 
   &:hover {
     box-shadow: 0 0.25rem 1rem rgba($color-tertiary, 0.64);
@@ -33,6 +46,11 @@
     gap: 2rem;
     margin-top: 2rem;
 
+    @include respond(tab-land) {
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
     &__container {
       display: flex;
       flex-direction: column;
@@ -40,7 +58,6 @@
     }
 
     &__about {
-      max-width: 60rem;
       text-align: justify;
     }
   }

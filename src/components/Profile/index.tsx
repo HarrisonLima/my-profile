@@ -30,30 +30,28 @@ const Profile = () => {
           21 anos. Tenho experiência com Figma, Node.js, JavaScript, React e
           TypeScript, focando no aprimoramento contínuo dessas habilidades.
         </p>
-        <footer className="profile__content__footer">
-          <div className="profile__content__social-medias">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="profile__content__social-medias__icon"
-            />
-            <FontAwesomeIcon
-              icon={faBehanceSquare}
-              className="profile__content__social-medias__icon"
-            />
-            <FontAwesomeIcon
-              icon={faFigma}
-              className="profile__content__social-medias__icon"
-            />
-            <FontAwesomeIcon
-              icon={faDiscord}
-              className="profile__content__social-medias__icon"
-            />
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="profile__content__social-medias__icon"
-            />
-          </div>
-        </footer>
+        <div className="profile__content__social-medias">
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className="profile__content__social-medias__icon"
+          />
+          <FontAwesomeIcon
+            icon={faBehanceSquare}
+            className="profile__content__social-medias__icon"
+          />
+          <FontAwesomeIcon
+            icon={faFigma}
+            className="profile__content__social-medias__icon"
+          />
+          <FontAwesomeIcon
+            icon={faDiscord}
+            className="profile__content__social-medias__icon"
+          />
+          <FontAwesomeIcon
+            icon={faGithub}
+            className="profile__content__social-medias__icon"
+          />
+        </div>
       </div>
     </div>
   );

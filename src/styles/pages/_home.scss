@@ -1,6 +1,13 @@
 .section {
   padding: 0 4rem;
 
+  @include respond(tab-land) {
+    padding: 0 2rem;
+  }
+  @include respond(phone) {
+    padding: 0 1rem;
+  }
+
   &__profile {
     align-items: center;
     display: flex;
@@ -15,5 +22,13 @@
 
   &__footer {
     margin-top: 8rem;
+
+    @include respond(tab-land) {
+      margin-top: 6rem;
+    }
+
+    @include respond(phone) {
+      margin-top: 4rem;
+    }
   }
 }

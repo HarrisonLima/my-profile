@@ -1,3 +1,12 @@
 %section-breath {
   padding: 4rem 0;
+  
+  @include respond(tab-land){
+    padding: 3rem 0;
+    
+  }
+
+  @include respond(phone){
+    padding: 2rem 0;
+  }
 }

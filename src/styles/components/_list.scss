@@ -11,8 +11,16 @@
     transition: all 0.2s ease-in-out;
     padding: 0.125rem 0;
 
+    @include respond(tab-land) {
+      font-size: 0.875rem;
+    }
+
+    @include respond(phone) {
+      font-size: 0.75rem;
+    }
+
     &:hover {
-      background-color: rgba($color-gray-800, 0.24);
+      background-color: rgba($color-gray-800, 0.08);
     }
   }
 }
