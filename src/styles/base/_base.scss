@@ -32,7 +32,7 @@ html ::-webkit-scrollbar-track {
 :root {
   background-image: linear-gradient(
     99.9deg,
-    $color-primary 45%,
+    $color-primary 30%,
     $color-secondary 70%,
     $color-tertiary 95%
   );
@@ -42,4 +42,22 @@ html ::-webkit-scrollbar-track {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+      99.9deg,
+      $color-primary 20%,
+      $color-secondary 60%,
+      $color-tertiary 95%
+    );
+  }
+
+  @include respond(phone) {
+    background-image: linear-gradient(
+      99.9deg,
+      $color-primary 10%,
+      $color-secondary 60%,
+      $color-tertiary 95%
+    );
+  }
 }
