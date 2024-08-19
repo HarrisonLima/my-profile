@@ -1,0 +1,10 @@
+@keyframes appear {
+  0% {
+    margin-top: -5rem;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}

@@ -1,4 +1,7 @@
 .profile {
+  -webkit-animation: 1s appear backwards;
+  -moz-animation: 1s appear backwards;
+  animation: 1s appear backwards;
   border: 0.125rem solid rgba($color-secondary, 0.8);
   border-radius: 0.75rem;
   box-shadow: 0 0.25rem 1rem rgba($color-secondary, 0.64);

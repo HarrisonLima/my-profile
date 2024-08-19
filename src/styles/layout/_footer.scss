@@ -37,6 +37,11 @@
 
     & > li {
       font-weight: 600;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        transform: translateY(-.25rem);
+      }
       & > a {
         text-decoration: none;
       }
