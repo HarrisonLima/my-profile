@@ -41,7 +41,6 @@
     width: 12rem;
 
     @include respond(widescreen) {
-      border-width: 0.25rem;
       height: 12rem;
       width: 14rem;
     }
