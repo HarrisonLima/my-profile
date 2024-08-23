@@ -1,4 +1,5 @@
 import cv from "../../assets/cv-harrison-fabiano-de-lima.pdf";
+import cv_en from "../../assets/cv-harrison-fabiano-de-lima-en.pdf";
 
 const Footer = () => {
   return (
@@ -6,7 +7,12 @@ const Footer = () => {
       <ul className="footer__list">
         <li>
           <a href={cv} className="link--url" target="_blank">
-            Currículo
+            Currículo (pt-br)
+          </a>
+        </li>
+        <li>
+          <a href={cv_en} className="link--url" target="_blank">
+            Currículo (en)
           </a>
         </li>
         <li>
